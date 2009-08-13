@@ -1,0 +1,13 @@
+# use glob syntax.
+syntax: glob
+
+.DS_Store
+._*
+*.pyo
+*.pyc
+*~
+
+# switch to regexp syntax.
+syntax: regexp
+#^\.pc/
+

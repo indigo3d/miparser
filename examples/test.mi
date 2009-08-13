@@ -1,0 +1,26 @@
+
+min version "3.5"
+link "mayabase.so"
+link "_massive_mray.so"
+link "architectural.so"
+link "base.so"
+link "luma.so"
+$include "mayabase.mi"
+$include <_massive_mray.mi>
+$include <architectural.mi>
+$include <base.mi>
+$include <luma.mi>
+$include <massmalusive.mi>
+
+instance "new.1_inst"
+    geometry "massive_mray"(
+        "id" 1,
+        "paramStr" "/tmp/massive/agent1.cdl /tmp/massive/frame.0.apf 0",
+        "bbox_min" -24.497803 0.000000 -20.485661,
+        "bbox_max" -18.139893 7.000000 -13.176445
+    )
+    trace     on
+    shadow    on
+    shadowmap on
+    visible   on
+end instance
